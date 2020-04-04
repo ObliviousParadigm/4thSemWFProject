@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<!-- <body onload="document.getElementById('id04').style.display='block'" style="width:auto;"> -->
+<body>
+ <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" title="Already have an account? click here!">Login</button>
+
+
+<div id="id01" class="logsignin">
+  
+  <form class="loginpopup" action="login.php" method="POST">
+    <div class="closebutton">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close logsignin">&times;</span>
+
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button><br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#1B4F72">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" > <a href="#" onclick="document.getElementById('id01').style.display='none'
+      document.getElementById('id03').style.display='block'" style="width:auto;">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"  title = "For New Users">Sign Up</button>
+
+<div id="id02" class="logsignin">
+  
+  <form class="loginpopup" action="signup.php" method="POST">
+    <div class="closebutton">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close logsignin">&times;</span>
+
+    </div>
+
+    <div class="container">
+      <label for="newuname"><b>New Username</b></label>
+      <input type="text" placeholder="Enter Username" name="newuname" required>
+
+      <label for="npsw"><b>New Password (8-20 characters)</b></label>
+      <input type="password" placeholder="Enter Password" name="npsw"  required>
+      
+      <label for="cpsw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Re Enter Password" name="cpsw" required>
+
+      <label for="REmail"><b>Recovery Email</b></label>
+      <input type="text" placeholder="Eg: john20@gmail.com" name="REmail" required>
+      
+      <label for="Hq"><b>Highest Qualification</b> optional<span class="hello" title="help us guide you better">(?)</span></label>
+      <input type="text" placeholder="Eg. 10th grade,B.Tech etc." name="Hq" >
+        
+      <button type="submit">Register</button>
+    </div>
+
+    <div class="container" style="background-color:#1B4F72">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" >Already Have An Account? <a href="#" onclick="document.getElementById('id02').style.display='none'
+      document.getElementById('id01').style.display='block'" style="width:auto;">click here!</a></span>
+    </div>
+  </form>
+</div>
+<div id="id03" class="logsignin">
+  
+  <form class="loginpopup" action="">
+    <div class="closebutton">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close logsignin">&times;</span>
+
+    </div>
+
+    <div class="container">
+      <label for="REmail"><b>Recovery Email</b></label>
+      <input type="text" placeholder="Enter the email you entered during signing up" name="REmail" required>
+        
+      <button type="submit">Confirm</button>
+    </div>
+
+    <div class="container" style="background-color:#1B4F72">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<!-- <div id="id04" class="logsignin">
+  
+  <form class="loginpopup" action="">
+    <div class="closebutton">
+      <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close logsignin">&times;</span>
+
+    </div> 
+
+    <div class="container" style="background-color:#1B4F72">
+      <label for="loginprompt" style="color:#ffffff"><b>Login For A Better Experience!</b></label><br>
+      <button onclick="document.getElementById('id04').style.display='none' 
+      document.getElementById('id01').style.display='block'" style="width:auto;" title="Already have an account? click here!">Login</button><br>
+      <label for="signupprompt" style="color:#ffffff"><b>Dont Have An Account Yet?</b></label><br>
+      <button onclick="document.getElementById('id04').style.display='none' 
+      document.getElementById('id02').style.display='block'" style="width:auto;" title="New User?">Sign Up</button>
+    </div>
+  </form>
+</div>  -->
+<script type="text/javascript" src = "login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>After 10th Grade</title>
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/events/page_stack.css" /> -->
+	<link rel="stylesheet" type="text/css" href="css/events/component.css" />
+	<script src="js/events/modernizr-custom.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:700" rel="stylesheet">
+
+	<style>
+		.slider {
+			width: 80%;
+			margin: 100px auto;
+		}
+
+		.slick-slide {
+			margin: 0px 20px;
+		}
+
+		.slick-slide img {
+			width: 100%;
+		}
+
+		.slick-prev:before,
+		.slick-next:before {
+			color: black;
+		}
+
+
+		.slick-slide {
+			transition: all ease-in-out 1s;
+			opacity: .2;
+		}
+
+		.slick-active {
+			opacity: 1;
+		}
+
+		.slick-current {
+			opacity: 1;
+		}
+
+		button.menu-button:focus {
+			outline: none !important;
+		}
+
+		/* intermediate, polytechnic, iti, paramedical, stc, vc */
+
+		.pages-stack #intermediate,
+		#polytechnic,
+		#iti,
+		#paramedical,
+		#stc,
+		#vc {
+			/* background-color: blue; */
+			/* background-image: linear-gradient(147deg ,#6447E0, #E3638B); */
+			background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.9), rgba(61, 61, 61, 0.9));
+			/* background: url("\images\Artboard1.png") */
+		}
+
+		nav.pages-nav.pages-nav--open {
+			/* background: linear-gradient(100deg, #4527C2, #91236E); */
+			background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.9), rgba(61, 61, 61, 0.9));
+		}
+
+		body {
+			/* background: linear-gradient(100deg, #4527C2, #91236E); */
+			background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.9), rgba(61, 61, 61, 0.9));
+		}
+
+		h5 {
+			font-family: 'Roboto', sans-serif;
+			;
+		}
+
+		p {
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.card-text {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.1);
+			color: transparent;
+			padding: 20px;
+			webkit-transition: background-color 1s, color 1s;
+			/* Safari */
+			transition: background-color 1s, color 1s;
+		}
+
+		.card-text:hover {
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+		}
+
+		.container {
+			min-width: 100%;
+		}
+
+		h1 {
+			font-size: 3em;
+			font-family: 'Josefin Sans', sans-serif;
+		}
+
+		.list-group-item {
+			text-align: left;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- navigation -->
+	<nav class="pages-nav">
+		<div class="pages-nav__item"><a class="link link--page" href="#intermediate">Intermediate</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#polytechnic">Polytechnic</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#iti">ITI</a></div>
+		<div class="pages-nav__item"><a class="link link--page" href="#paramedical">Paramedical</a></div>
+		<!-- <div class="pages-nav__item"><a class="link link--page" href="#stc">Short Term Courses</a></div> -->
+		<!-- <div class="pages-nav__item"><a class="link link--page" href="#vc">Others</a></div> -->
+	</nav>
+	<!-- /navigation-->
+	<!-- pages stack -->
+	<div class="pages-stack">
+
+		<div class="page" id="intermediate">
+			<h1 align="center" style="margin-top:100px;color:white;">Intermediate<br>2 years</h1>
+			<section class="responsive slider" style="margin-top:100px;">
+				<div>
+					<div class="card" style="width: 18rem;">
+
+						<div class="card-body">
+							<h5 class="card-title" align="center">Science</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/science.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;">
+								<a target="_parent" href="moreinfo.html#science" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+
+						</ul>
+						<p class="card-text">3 Courses<br>
+							MPC - Math, Physics, and Chemistry
+							<br>
+							BiPC - Biology, Physics, and Chemistry
+							<br>
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Commerce</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/commerce.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#com" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							CEC - Civics, Economics, and Commerce
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Arts</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/science.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#art" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							MEC - Maths, Economics, and Commerce
+							HEC - History, Economics, and Civics/Commerce
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="page" id="iti">
+			<h1 align="center" style="margin-top:100px;color:white;">ITI<br>2 years</h1>
+			<section class="responsive slider" style="margin-top:100px;">
+				<div>
+					<div class="card" style="width: 18rem;">
+
+						<div class="card-body">
+							<h5 class="card-title" align="center">Electrician</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/electrician.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;">
+								<a target="_parent" href="moreinfo.html#electrician" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Carpenter</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/carpenter.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#itcarpenter" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Plumber</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/plumber.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#plumber" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Fitter</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/fitter.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#fitter" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Mechanic</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/mechanic.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#mechanic" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Technician</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/technician.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#technician" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="page" id="paramedical">
+			<h1 align="center" style="margin-top:100px;color:white;">Paramedical<br>2 years</h1>
+			<section class="responsive slider" style="margin-top:100px;">
+				<div>
+					<div class="card" style="width: 18rem;">
+
+						<div class="card-body">
+							<h5 class="card-title" align="center">DMLT</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Diploma in Medical Laboratory Technology</li>
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/medlab.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#dmlt" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">DHFM</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Diploma in Hospital Food Service Management</li>
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/hospfood.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#dhfsm" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">DOT</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Diploma in Opthalmic Technology</li>
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/optech.jpeg" alt="Picture" class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"><a target="_parent"
+									href="moreinfo.html#dot" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="page" id="stc">
+			<h1 align="center" style="margin-top:100px;color:white;">Short Term Courses<br>6-12 months</h1>
+			<section class="responsive slider" style="margin-top:100px;">
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in 2D and 3D Animation</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Contact | Vedant - 9844303043</li>
+							<li class="list-group-item">Registration Fee | 1000/Team</li>
+							<li class="list-group-item" style="text-align: center;">
+								Timings <br><br> 8th March | 09:00 - 14:00
+							</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/battle-of-the-bands/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Computer Applications</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Contact | Vedant - 9844303043</li>
+							<li class="list-group-item">Registration Fee | 600/Team</li>
+							<li class="list-group-item" style="text-align: center;">
+								Timings <br><br> 8th March | 10:00 - 13:00
+							</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/acoustic-amalgum/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Certificate course in Graphic Designing</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Contact | Vedant - 9844303043</li>
+							<li class="list-group-item">Registration Fee | 150/Person</li>
+							<li class="list-group-item" style="text-align: center;">
+								Timings <br><br> 8th March | 10:45 - 13:15
+							</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/solo-instrumental/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Certificate Course in Web Designing</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Contact | Vedant - 9844303043</li>
+							<li class="list-group-item">Registration Fee | 150/person</li>
+							<li class="list-group-item" style="text-align: center;">
+								Timings <br><br> 8th March | 10:30 - 13:00
+							</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/solo-vocals/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Certificate Course in Programming Language(Java, C++,
+								PHP, SQL)</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Contact | Vedant - 9844303043</li>
+							<li class="list-group-item">Registration Fee | 150/person</li>
+							<li class="list-group-item" style="text-align: center;">
+								Timings <br><br> 8th March | 10:30 - 13:00
+							</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/solo-vocals/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+			</section>
+
+
+		</div>
+
+		<div class="page" id="vc">
+			<h1 align="center" style="margin-top:100px;color:white;">Vocational Courses</h1>
+			<section class="slider responsive" style="padding:0px;margin-top:80px;">
+				<!-- <div class="col-sm-1"></div> -->
+				<!-- <div class="col-sm-3"> -->
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Banking and Financial Service Course</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">2 years</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size: 14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">DTP and Printing Technology</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">DTP - Desktop Publishing</li>
+							<li class="list-group-item">1 year</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Insurance and Marketing</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">1 year</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Tourism and Travel Techniques Course</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">2 year</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Pre-School Teacher Training</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">2 years</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Hotel Operations Course</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">2 years</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div align="center">
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Dental Technician Course</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">2 years</li>
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="https://www.instamojo.com/aatmatrisha19/general-quiz-ef4b8/?ref=store"
+									style="width:100%;z-index: 1000;" class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text" style="font-size:14px;">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+			</section>
+		</div>
+
+
+		<div class="page" id="polytechnic">
+			<h1 align="center" style="margin-top:100px;color:white;">Polytechnic</h1>
+			<section class="responsive slider" style="margin-top:100px;">
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Civil Engineering</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/civil.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#dipcivil" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Electrical Engineering</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/eee.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#dipeee" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<!-- <img class="card-img-top" src="images/core_members/empty.png" alt="Card image cap"> -->
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Mechanical Engineering</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/mech.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#dipmech" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Electronics and Communication Engineering
+							</h5>
+
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/ece.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#dipece" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Computer Engineering</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/cse.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#dipcs" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title" align="center">Diploma in Home Science</h5>
+						</div>
+						<ul class="list-group list-group-flush">
+							<img src="/home/paradigm/Documents/PESU/WebDev/project/pics/hsci.jpeg" alt="Picture"
+								class="list-group-item">
+							<li class="list-group-item" style="padding:0;z-index:1000;"> <a target="_parent"
+									href="moreinfo.html#diphs" style="width:100%;z-index: 1000;"
+									class="btn btn-success">More Info</a>
+							</li>
+						</ul>
+						<p class="card-text">
+							Nothing
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+	<!-- /pages-stack -->
+	<button class="menu-button"><span>Menu</span></button>
+	<script src="js/events/classie.js"></script>
+	<script src="js/events/main.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		// $(document).on('ready', function () {
+		// 	$(".center").slick({
+		// 		dots: true,
+		// 		infinite: true,
+		// 		centerMode: true,
+		// 		slidesToShow: 3,
+		// 		slidesToScroll: 1,
+		// 		autoplay: true,
+		// 		autoplaySpeed: 1000,
+		// 	});
+		// });
+		// $(document).on('ready', function () {
+		// 	$(".pixelsCarousel").slick({
+		// 		dots: true,
+		// 		infinite: true,
+		// 		slidesToShow: 2,
+		// 		autoplaySpeed: 1000,
+		// 	});
+		// });
+		$('.responsive').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			responsive: [
+				{
+					breakpoint: 2500,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true,
+						autoplay: true,
+						autoplaySpeed: 1000
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						autoplay: true,
+						autoplaySpeed: 3000
+					}
+				},
+				// {
+				//     breakpoint: 768,
+				//     settings: {
+				//         slidesToShow: 2,
+				//         slidesToScroll: 1,
+				//         autoplay: true,
+				//         autoplaySpeed: 1000,
+				//     }
+				// },
+				{
+					breakpoint: 750,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						// centerMode: true,
+						autoplay: true,
+						autoplaySpeed: 3000
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+	</script>
+</body>
+
+</html>
